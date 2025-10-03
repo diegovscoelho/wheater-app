@@ -1,1 +1,157 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-neutral-900: #02012C;
+  --color-neutral-800: #262540;
+  --color-neutral-700: #302F4A;
+  --color-neutral-600: #3C3B5E;
+  --color-neutral-300: #ACACB7;
+  --color-neutral-200: #D4D3D9;
+  --color-neutral-0: #FFFFFF;
+
+  --color-orange-500: #FF820A;
+
+  --color-blue-500: #4658D9;
+  --color-blue-700: #2B1B3C;
+  
+  --color-primary: var(--color-blue-500);
+  --color-background: var(--color-neutral-900);
+  --color-text: var(--color-neutral-0);
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    font-weight: 400; 
+    padding-left: 112px;
+    padding-right: 112px;
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('../public/assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../public/assets/fonts/DM_Sans/static/DMSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../public/assets/fonts/DM_Sans/static/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500; 
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../public/assets/fonts/DM_Sans/static/DMSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../public/assets/fonts/DM_Sans/static/DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../public/assets/fonts/DM_Sans/static/DMSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+.text-preset-1 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: var(--color-text);
+}
+
+.text-preset-2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-text);
+}
+
+.text-preset-3 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: var(--color-text);
+}
+
+.text-preset-4 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-text);
+}
+
+.text-preset-5 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-text);
+}
+
+.text-preset-5-medium {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.text-preset-6 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-text);
+}
+
+.text-preset-7 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-text);
+}
+
+.text-preset-8 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-text);
+}

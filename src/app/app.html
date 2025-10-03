@@ -1,66 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<div class="header">
+  <img src="assets/images/logo.svg" alt="Logo do Aplicativo" class="app-logo">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Weather app</title>
+  <div class="units-toggle" (click)="toggleDropdown()">
+    <img src="assets/images/icon-units.svg" alt="Icon Units">
+    <p>Units</p>
+    <img src="assets/images/icon-dropdown.svg" alt="Icon Dropdown">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Units
-
-  Switch to Imperial/Metric
-
-  Temperature
-
-  Celsius (°C)
-  Fahrenheit (°F)
-
-  Wind Speed
-
-  km/h
-  mph
-
-  Precipitation
-
-  Millimeters (mm)
-  Inches (in)
-
-  How's the sky looking today?
-
-  Search for a city, e.g., New York
-  Search
-
-  Feels like
-  <!-- Insert temperature here -->
-
-  Humidity
-  <!-- Insert humidity here -->
-
-  Wind
-  <!-- Insert wind here -->   
-  
-  Precipitation
-  <!-- Insert precipitation here -->
-
-  Daily forecast
-  <!-- Insert daily forecast for the next 7 days here -->
-
-  Hourly forecast
-  <!-- Insert hourly forecast for the selected day here -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="units-dropdown" [class.open]="isDropdownOpen">
+      <p>Switch to Imperial/Metric</p>
+      <p>Temperature</p>
+      <p>Wind Speed</p>
+    </div>
   </div>
-</body>
-</html>
+</div>
+
+<p class="text-preset-2 main-text">How's the sky looking today?</p>
+
+<div class="search-container">
+  <div class="search-bar">
+    <div class="search-input">
+      <img src="assets/images/icon-search.svg" alt="Icon Search">
+      <input 
+        type="text" 
+        placeholder="Search for a place..." 
+        class="text-preset-5-medium search-input-field">
+    </div>
+  </div>
+  <div class="search-button">
+    <p class="text-preset-5-medium">Search</p>
+  </div>
+</div>
+
+<section class="metrics">
+  <h3>Switch to Imperial/Metric</h3>
+
+  <h4>Temperature</h4>
+  <p>Celsius (°C) / Fahrenheit (°F)</p>
+
+  <h4>Wind Speed</h4>
+  <p>km/h / mph</p>
+
+  <h4>Precipitation</h4>
+  <p>Millimeters (mm) / Inches (in)</p>
+</section>
+
+<section class="weather-info">
+  <p>Feels like <!-- temperatura aqui --></p>
+  <p>Humidity <!-- umidade aqui --></p>
+  <p>Wind <!-- vento aqui --></p>
+  <p>Precipitation <!-- precipitação aqui --></p>
+</section>
+
+<section class="forecast">
+  <h3>Daily forecast</h3>
+  <!-- previsão 7 dias -->
+  
+  <h3>Hourly forecast</h3>
+  <!-- previsão por hora -->
+</section>
+
+<div class="attribution">
+  Challenge by 
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="#">Your Name Here</a>.
+</div>
