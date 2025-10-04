@@ -1,17 +1,9 @@
 <div class="header">
   <img src="assets/images/logo.svg" alt="Logo do Aplicativo" class="app-logo">
 
-  <div class="units-toggle" (click)="toggleDropdown()">
-    <img src="assets/images/icon-units.svg" alt="Icon Units">
-    <p>Units</p>
-    <img src="assets/images/icon-dropdown.svg" alt="Icon Dropdown">
-
-    <div class="units-dropdown" [class.open]="isDropdownOpen">
-      <p>Switch to Imperial/Metric</p>
-      <p>Temperature</p>
-      <p>Wind Speed</p>
-    </div>
-  </div>
+  <app-units-dropdown 
+    (unitsChange)="handleUnitsChange">
+  </app-units-dropdown>
 </div>
 
 <p class="text-preset-2 main-text">How's the sky looking today?</p>
@@ -20,10 +12,7 @@
   <div class="search-bar">
     <div class="search-input">
       <img src="assets/images/icon-search.svg" alt="Icon Search">
-      <input 
-        type="text" 
-        placeholder="Search for a place..." 
-        class="text-preset-5-medium search-input-field">
+      <input type="text" placeholder="Search for a place..." class="text-preset-5-medium search-input-field">
     </div>
   </div>
   <div class="search-button">
@@ -31,36 +20,8 @@
   </div>
 </div>
 
-<section class="metrics">
-  <h3>Switch to Imperial/Metric</h3>
-
-  <h4>Temperature</h4>
-  <p>Celsius (°C) / Fahrenheit (°F)</p>
-
-  <h4>Wind Speed</h4>
-  <p>km/h / mph</p>
-
-  <h4>Precipitation</h4>
-  <p>Millimeters (mm) / Inches (in)</p>
-</section>
-
-<section class="weather-info">
-  <p>Feels like <!-- temperatura aqui --></p>
-  <p>Humidity <!-- umidade aqui --></p>
-  <p>Wind <!-- vento aqui --></p>
-  <p>Precipitation <!-- precipitação aqui --></p>
-</section>
-
-<section class="forecast">
-  <h3>Daily forecast</h3>
-  <!-- previsão 7 dias -->
-  
-  <h3>Hourly forecast</h3>
-  <!-- previsão por hora -->
-</section>
-
 <div class="attribution">
-  Challenge by 
+  Challenge by
   <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
   Coded by <a href="#">Your Name Here</a>.
 </div>

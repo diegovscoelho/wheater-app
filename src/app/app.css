@@ -10,37 +10,6 @@
     margin-top: 64px;
 }
 
-.units-toggle {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    position: relative;
-    background-color: var(--color-neutral-800);
-    padding-left: 16px;
-    padding-right: 16px;
-    z-index: 11;
-}
-
-.units-dropdown {
-    position: absolute;
-    top: 100%; 
-    right: 0; 
-    opacity: 0;
-    visibility: hidden;
-
-    background-color: var(--color-neutral-700);
-    padding: 15px;
-    border-radius: 8px;
-    z-index: 10;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
-}
-
-.units-dropdown.open {
-    opacity: 1;
-    visibility: visible;
-}
-
 .search-container {
     justify-content: center;
     padding-top: 64px;

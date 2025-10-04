@@ -1,0 +1,67 @@
+<div class="units-toggle" (click)="toggleDropdown()">
+    <img src="assets/images/icon-units.svg" alt="Icon Units">
+    <p>Units</p>
+    <img src="assets/images/icon-dropdown.svg" alt="Icon Dropdown">
+
+    <div class="units-dropdown" [class.open]="isDropdownOpen">
+      <p class="text-preset-7 option-container">Switch to Imperial/Metric</p>
+
+      <p class="text-preset-8 dropdown-label" data-section="temperature">Temperature</p>
+
+      <p class="text-preset-7 option-container" (click)="selectOption('temperature', 'celsius')"
+        [class.selected]="selectedUnits.temperature === 'celsius'">
+        Celsius (°C)
+        <span class="selected-icon" *ngIf="selectedUnits.temperature === 'celsius'">
+          <img src="assets/images/icon-checkmark.svg" alt="Selected" class="checkmark-icon">
+        </span>
+      </p>
+      <div class="spacer"></div>
+      <p class="text-preset-7 option-container" (click)="selectOption('temperature', 'fahrenheit')"
+        [class.selected]="selectedUnits.temperature === 'fahrenheit'">
+        Fahrenheit (°F)
+        <span class="selected-icon" *ngIf="selectedUnits.temperature === 'fahrenheit'">
+          <img src="assets/images/icon-checkmark.svg" alt="Selected" class="checkmark-icon">
+        </span>
+      </p>
+
+      <div class="divider"></div>
+
+      <p class="text-preset-8 dropdown-label" data-section="wind">Wind Speed</p>
+
+      <p class="text-preset-7 option-container" (click)="selectOption('wind', 'kmh')"
+        [class.selected]="selectedUnits.wind === 'kmh'">
+        km/h
+        <span class="selected-icon" *ngIf="selectedUnits.wind === 'kmh'">
+          <img src="assets/images/icon-checkmark.svg" alt="Selected" class="checkmark-icon">
+        </span>
+      </p>
+      <div class="spacer"></div>
+      <p class="text-preset-7 option-container" (click)="selectOption('wind', 'mph')"
+        [class.selected]="selectedUnits.wind === 'mph'">
+        mph
+        <span class="selected-icon" *ngIf="selectedUnits.wind === 'mph'">
+          <img src="assets/images/icon-checkmark.svg" alt="Selected" class="checkmark-icon">
+        </span>
+      </p>
+
+      <div class="divider"></div>
+
+      <p class="text-preset-8 dropdown-label" data-section="precipitation">Precipitation</p>
+
+      <p class="text-preset-7 option-container" (click)="selectOption('precipitation', 'mm')"
+        [class.selected]="selectedUnits.precipitation === 'mm'">
+        Millimeters (mm)
+        <span class="selected-icon" *ngIf="selectedUnits.precipitation === 'mm'">
+          <img src="assets/images/icon-checkmark.svg" alt="Selected" class="checkmark-icon">
+        </span>
+      </p>
+      <div class="spacer"></div>
+      <p class="text-preset-7 option-container" (click)="selectOption('precipitation', 'in')"
+        [class.selected]="selectedUnits.precipitation === 'in'">
+        Inches (in)
+        <span class="selected-icon" *ngIf="selectedUnits.precipitation === 'in'">
+          <img src="assets/images/icon-checkmark.svg" alt="Selected" class="checkmark-icon">
+        </span>
+      </p>
+    </div>
+  </div>
