@@ -67,18 +67,19 @@
 
 .left-side {
     display: block;
-    width: 100%;
+    width: 800px;
 }
 
 .wheater-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: stretch;
     padding-top: 48px;
     width: 100%;
     gap: 32px;
 }
 
-.wheater-card {
+.wheater-info {
     background-image: url('/assets/images/bg-today-large.svg');
     height: 286px;
     width: 100%;
@@ -86,24 +87,85 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .indicators-container {
     padding-top: 32px;
     display: flex;
+    width: 100%;
     gap: 24px;
 }
 
 .indicator-card {
     background-color: var(--color-neutral-700);
     border-radius: 12px;
+    padding-left: 20px;
     width: 100%;
-    height: 118px;
 }
 
 .hourly-forecast-container {
     background-color: var(--color-neutral-700);
-    height: 693px;
     width: 384px;
     border-radius: 20px;
+}
+
+.wheater-card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    width: 100%;
+}
+
+.location-info {
+    display: block;
+}
+
+.temperature-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.weather-icon {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.daily-forecast-container {
+    padding-top: 28px;
+    width: 100%;
+}
+
+.daily-forecast {
+    display: flex;
+    gap: 16px;
+}
+
+
+.wheater-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-neutral-700);
+    border-radius: 18px;
+}
+
+.wheater-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.temperature-range {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
 }
