@@ -83,7 +83,7 @@
     background-image: url('/assets/images/bg-today-large.svg');
     height: 286px;
     width: 100%;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -109,6 +109,10 @@
     background-color: var(--color-neutral-700);
     width: 384px;
     border-radius: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .wheater-card-row {
@@ -163,9 +167,57 @@
 }
 
 .temperature-range {
-    padding: 10px;
+    padding: 10px 16px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
+}
+
+.hourly-forecast-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+}
+
+.hourly-forecast-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color-neutral-600);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.hourly-forecast-dropdown p {
+    margin: 0;
+}
+
+.hourly-forecast-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1 1 0;
+    padding-bottom: 24px;
+}
+
+.hourly-forecast-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-neutral-600);
+    border-radius: 8px;
+}
+
+.hourly-forecast-card-left-side {
+    display: flex;
+    gap: 12px;
+}
+
+.hourly-forecast-card-left-side img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
 }

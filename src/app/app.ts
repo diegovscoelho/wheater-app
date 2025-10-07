@@ -13,6 +13,8 @@ import { UnitsDropdown } from './units-dropdown/units-dropdown';
 
 export class App {
     protected readonly title = signal('wheater-app');
+    
+    isDropdownOpen: boolean = false; 
 
     currentUnits: UnitSelections = {
         temperature: 'celsius', 
@@ -22,5 +24,9 @@ export class App {
 
     handleUnitsChange(newUnits: UnitSelections) {
         this.currentUnits = newUnits;
+    }
+
+    toggleDropdown() {
+        this.isDropdownOpen = !this.isDropdownOpen;
     }
 }
