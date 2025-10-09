@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UnitsDropdown } from './units-dropdown/units-dropdown';
+import { HourlyForecast } from './hourly-forecast/hourly-forecast';
 
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, CommonModule, UnitsDropdown], 
+    imports: [RouterOutlet, CommonModule, UnitsDropdown, HourlyForecast], 
     templateUrl: './app.html',
     styleUrl: './app.css'
 })
